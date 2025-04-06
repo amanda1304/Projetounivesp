@@ -1,0 +1,116 @@
+
+body{
+    background: #EEAFC0;
+    display: block;
+    justify-content: center;
+    flex-direction: row;
+  
+}
+body > header {
+    display: block;
+    flex-direction: row;
+}
+
+body > header> h1 {
+    margin-bottom: 10px;
+    color: #850E35;
+    text-align: center;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 800;
+    font-size: 38px;
+    font-style: normal;
+    line-height: normal;
+}
+body > header > p {
+    color: #615C5C;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+body > section > img{
+    display: scroll;
+
+    width: 540px;
+    height: 388px; 
+    margin-left: 100px;
+}
+body > section{
+    display: flex;
+    flex-direction: row;
+}
+body > section > menu{
+    margin-top: 250px;
+    margin-left: 80px;
+    align-items: center;
+}
+body > section > menu > a > button{
+    width: 370px;
+    height: 56px;
+    margin-left:25px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 15px;
+    background: #D3517C;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
+    color: #fff;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+body > section > menu p{
+    margin-top: 10px;
+    color: #615C5C;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+footer{
+    border-radius: 20px;
+    background: rgba(250, 250, 250, 0.75);
+    display: flex;
+    justify-content: center;
+    
+}
+footer > ul{
+    flex-direction: column;
+    align-items: flex-start;
+    align-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+footer > ul > li{
+    display: flex;
+    flex-direction: row;
+    padding:5px;
+    margin-left:40px;
+   
+}
+footer > ul > li > img{
+    
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    flex-shrink: 0;
+}
+footer > ul > li > p{
+    color: #3b3b3b;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+   
+}

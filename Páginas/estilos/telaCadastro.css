@@ -1,0 +1,141 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+}
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 870px;
+    height: 468px;
+    border-radius: 35px;
+    background: #EEAFC0;
+}
+section > img{
+    width: 409px;
+    height: 409px;
+    flex-shrink: 0;
+    aspect-ratio: 1/1;
+}
+section > header{
+    margin-right: 60px;
+    
+}
+section > header > menu{
+    display: flex;
+    width: 301px;
+    flex-direction: column;
+    gap: 30px;
+}
+section > header > menu > div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+}
+section > header > menu > div > a.telaAtual{
+    display: flex;
+    width: 153px;
+    height: 45px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 15px;
+    background: #D3517C;
+    color: #FFF;
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+section > header > menu >div > a{
+    display: flex;
+    width: 153px;
+    height: 45px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 15px;
+    background: #FFF;
+    color: #D3517C;
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+section > header > menu > form{
+    display: flex;
+    width: 301px;
+    flex-direction: column;
+    gap: 10px;
+}
+
+section > header > menu > form > ul > li{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 16px;
+    align-self: stretch;
+}
+section > header > menu > form > ul > li > input{
+    display: flex;
+    height: 40px;
+    padding: 10px;
+    align-items: center;
+    align-self: stretch;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.71);
+    color: #615C5C;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+section > header >menu > form > a.cadastrar{
+    display: flex;
+    height: 45px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    border-radius: 15px;
+    background: #D3517C;
+    color: #FFF;
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+section > header >menu > form > p{
+    color: #615C5C;
+    text-align: justify;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;   
+}
+footer{
+    display: flex;
+    justify-content: right; 
+    align-self:last baseline;
+    height: 123px;
+}
+footer > img{
+  
+    width: 112px;
+    height: 113px;
+    
+   
+}
