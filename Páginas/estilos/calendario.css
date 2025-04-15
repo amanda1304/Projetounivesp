@@ -1,0 +1,154 @@
+.container {
+    background-color: #fbd0db;
+
+    padding: 20px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+    max-width: 340px;
+    text-align: center;
+  }
+
+  .flatpickr-calendar {
+    background-color: #ffeaf0;
+    border: none;
+
+    
+  }
+  .flatpickr-months {
+    background-color: transparent;
+    color: #8c0e3a;
+    font-weight: bold;
+  }
+  .flatpickr-months .flatpickr-next-month svg {
+    width: 14px;
+    height: 14px;
+    
+}
+  .flatpickr-months .flatpickr-prev-month,
+  .flatpickr-months .flatpickr-next-month {
+    fill: #8c0e3a;
+    width: 24px;
+    height: 24px;
+   
+  }
+
+  .flatpickr-weekdays {
+    background: none;
+    color: #8c0e3a;
+    font-weight: bold;
+  }
+
+  .flatpickr-day {
+    display: flex;
+    align-items: center;
+    color: #000;
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    border-radius: 20px;
+    transition: 0.2s;
+  }
+
+  .flatpickr-day:hover {
+    background-color: rgba(251, 190, 190, 0.51);
+  }
+
+  .flatpickr-day.selected,
+  .flatpickr-day.startRange,
+  .flatpickr-day.endRange {
+    background-color: #D3517C;
+    color: white;
+  }
+
+  .flatpickr-day.today {
+    border: 1px solid #D3517C;
+  }
+  .flatpickr-calendar,
+    .flatpickr-day,
+    .flatpickr-months,
+    .flatpickr-weekdays {
+    font-family: 'Montserrat', sans-serif;
+    }
+/* Estilo da seta anterior e próxima */
+
+.flatpickr-prev-month,
+.flatpickr-next-month {
+  border: 2px solid #D3517C;
+  background-color: #fce1e8;
+  border-radius: 40%;
+  width: 72px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  box-sizing: border-box;
+}
+
+/* Ícone da seta */
+.flatpickr-prev-month svg,
+.flatpickr-next-month svg {
+  display: block;
+  width: 12px;
+  height: 12px;
+  stroke: #D3517C;         /* cor da seta */
+  stroke-width: 2;
+  fill: none;
+}
+.flatpickr-prev-month::before {
+    content: "<";
+    color: #D3517C;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .flatpickr-next-month::before {
+    content: ">";
+    color: #D3517C;
+    font-size: 16px;
+    font-weight: bold;
+   
+  }
+
+/* Hover (opcional: muda fundo quando passar o mouse) */
+.flatpickr-prev-month:hover,
+.flatpickr-next-month:hover {
+  background-color: #fbd0db;
+}
+
+/* Cabeçalho do mês e ano */
+.flatpickr-months {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #5A2A3C; /* ou outra cor que combine com seu tema */
+  }
+  
+  /* Mês individual (como "May") */
+  .flatpickr-current-month .cur-month {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  /* Ano (como "2025") */
+  .flatpickr-current-month input.cur-year {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #5A2A3C;
+    border: none;
+    background: transparent;
+    text-align: center;
+    outline: none;
+    width: 60px;
+  }
+
+
+
+

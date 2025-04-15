@@ -3,18 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Páginas/estilos/reset.css">
+    <link rel="stylesheet" href="/Páginas/estilos/telaCalendario.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="/Páginas/estilos/calendario.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <title>Document</title>
 </head>
 <body>
     <header>
         <h1>Datas disponíveis</h1>
+        <h2>Escolha uma data para seu atendimento:</h2>
     </header>
     <section>
-        <menu>
-            <input type="date">
-            <button>Agendar</button>
-        </menu>
+       
+        <input type="hidden" id="calendario">
+
+
+        <div id="horarios" ></div>
+      
+        <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+        <script>
+          // Inicializa o calendário
+          flatpickr("#calendario", {
+            inline: true,
+            minDate: "today", // Bloqueia datas anteriores a hoje
+            dateFormat: "Y-m-d",
+            onChange: function(selectedDates, dateStr, instance) {
+              // Quando a data for escolhida, carrega os horários disponíveis
+              carregarHorarios(dateStr);
+            }
+          });
+      
+          // Simulando horários disponíveis (depois isso virá do banco de dados)
+          function carregarHorarios(dataSelecionada) {
+            const horarios = ["09:00", "10:30", "13:00", "14:30", "16:00"];
+            let html = `<h3>Horários disponíveis para ${dataSelecionada}:</h3><ul>`;
+            horarios.forEach(h => {
+              html += `<li><button onclick="confirmarHorario('${dataSelecionada}', '${h}')">${h}</button></li>`;
+            });
+            html += `</ul>`;
+            document.getElementById("horarios").innerHTML = html;
+          }
+      
+          function confirmarHorario(data, hora) {
+            alert(`Você escolheu ${data} às ${hora}`);
+            // Aqui você pode enviar isso pro backend com fetch/AJAX
+          }
+        </script>
+        <div>
+            <img src="/imagens/Time management-amico.png" alt="">
+            <a href="/Páginas/telaagendamento.html">
+                <button>Agendar</button>
+            </a>
+        </div>
+
     </section>
-   
 </body>
 </html>
