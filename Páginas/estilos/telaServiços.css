@@ -18,9 +18,7 @@ section > img{
     height: 280px;
    
 }
-section > menu{
 
-}
 section > menu > h1{
     color: #850E35;
     text-align: center;
@@ -42,9 +40,7 @@ section > menu > p{
     margin-bottom: 30px;
     margin-left: 30px;
 }
-section > menu > ul{
 
-}
 section > menu > ul > li{
     display: flex;
     flex-direction: column;

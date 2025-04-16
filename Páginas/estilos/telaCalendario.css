@@ -62,14 +62,21 @@ section > div > a{
     font-weight: 400;
     line-height: normal;
 }
-/*body {
-    background-color: #e9a9ba;
-    font-family: 'Arial', sans-serif;
-    color: #6e0f33;
-    display: flex;
-    justify-content: center;
-    padding: 50px;
-  }*/
+@media screen and (max-width: 480px){
+    section > div > img{
+       display: none;
+    }
+    section{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 40px;
+      
+    }
+    section > div > a{
+        margin-top: 40px;
+    }
+}
 
  
 
